@@ -14,7 +14,16 @@ However, errors in kernel space can be critical, potentially leading to a system
 **Device Drivers**
 
 Device drivers reside in kernel space.
-They act as the bridge between hardware and applications, allowing user-space programs to interact with devices safely and efficiently.
+They act as the bridge between hardware and applications, allowing user-space programs to interact with devices safely 
+and efficiently.
 Examples include drivers for keyboards, mice, GPUs, and network adapters.
+
+### What is a Loadable Kernel Module (LKM)?
+
+A Loadable Kernel Module (LKM) is a separately compiled, object-oriented component of the Linux kernel that can be 
+dynamically inserted into or removed from the kernel during system operation. LKMs are distributed as kernel object 
+files (.ko), which contain code and metadata required for integration with the running kernel. In contrast to the 
+statically linked kernel image (vmlinuz), LKMs enable extensibility and modularity by allowing additional 
+functionality—such as device drivers, file systems, or networking protocols—to be incorporated without recompiling or rebooting the kernel.
 
 

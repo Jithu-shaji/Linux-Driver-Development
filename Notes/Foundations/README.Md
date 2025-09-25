@@ -1,5 +1,9 @@
 # Introduction to Linux Driver Development
 
+Linux is a versatile and open-source operating system widely used for desktops, servers, and embedded devices. At its core, the Linux kernel manages hardware resources and provides essential services to applications. Understanding the distinction between user space and kernel space, as well as the role of device drivers and loadable kernel modules (LKMs), is fundamental for anyone aiming to develop or extend Linux device drivers.
+
+This article covers the core concepts of Linux driver development, including the interaction between applications and hardware, the structure of kernel modules, and essential commands for working with LKMs.
+
 ## User Space
 
 This is where normal applications run — for example, your C programs, Firefox, or VS Code. Applications in user space cannot directly access hardware such as the keyboard, GPU, or storage devices. Instead, they must request services from the kernel.
